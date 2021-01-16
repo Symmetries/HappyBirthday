@@ -1,0 +1,54 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overscroll-behavior-y: none
+}
+
+canvas {
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+main {
+  z-index: 0;
+  padding-top: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  color: white;
+  background-color: rgba(150, 150, 150, 0.75);
+  width: min(35ch, 90vw);
+  margin-bottom: 20vh;
+  padding: 2vmin;
+  border-radius: 1vmin;
+  font-size: 17px;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px .5em 2em;
+}
+
+.sender {
+  width: 100%; 
+  text-align: center;
+  border-radius: 0.5vmin;
+  font-size: 1.6em;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 1px 1px #C83F49;
+}
+
+.message{
+  margin-top: 1vmin;
+  font-family: 'Open Sans';
+  padding-bottom: 5px;
+}
